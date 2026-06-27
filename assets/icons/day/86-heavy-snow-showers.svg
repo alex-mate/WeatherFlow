@@ -1,0 +1,83 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Heavy Snow Showers day icon">
+  <defs>
+    <linearGradient id="sunGrad" x1="36" y1="22" x2="78" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE066"/>
+      <stop offset="1" stop-color="#FFB703"/>
+    </linearGradient>
+    <linearGradient id="moonGrad" x1="38" y1="20" x2="72" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="cloudLight" x1="25" y1="43" x2="103" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="cloudDark" x1="25" y1="43" x2="103" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#94A3B8"/>
+      <stop offset="1" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="rainGrad" x1="0" y1="0" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="snowGrad" x1="0" y1="0" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" fill="none"/>
+<path d="M64 12L64 25" stroke="#FFB703" stroke-width="7" stroke-linecap="round"/>
+  <path d="M64 83L64 96" stroke="#FFB703" stroke-width="7" stroke-linecap="round"/>
+  <path d="M18 64L31 64" stroke="#FFB703" stroke-width="7" stroke-linecap="round"/>
+  <path d="M97 64L110 64" stroke="#FFB703" stroke-width="7" stroke-linecap="round"/>
+  <path d="M31 31L41 41" stroke="#FFB703" stroke-width="7" stroke-linecap="round"/>
+  <path d="M87 87L97 97" stroke="#FFB703" stroke-width="7" stroke-linecap="round"/>
+  <path d="M31 97L41 87" stroke="#FFB703" stroke-width="7" stroke-linecap="round"/>
+  <path d="M87 41L97 31" stroke="#FFB703" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="64" cy="64" r="29" fill="url(#sunGrad)"/>
+
+  <path d="M35 93H94C104 93 112 85 112 75C112 66 105 59 96 59C93 44 80 34 64 34C48 34 35 45 32 59C22 60 15 68 15 78C15 87 25 93 35 93Z" fill="url(#cloudLight)" opacity="0.95"/>
+
+
+  <g transform="translate(30 88) scale(1)" stroke="url(#snowGrad)" stroke-width="3" stroke-linecap="round">
+    <path d="M0 -8V8"/>
+    <path d="M-7 -4L7 4"/>
+    <path d="M7 -4L-7 4"/>
+  </g>
+
+  <g transform="translate(50 98) scale(1)" stroke="url(#snowGrad)" stroke-width="3" stroke-linecap="round">
+    <path d="M0 -8V8"/>
+    <path d="M-7 -4L7 4"/>
+    <path d="M7 -4L-7 4"/>
+  </g>
+
+  <g transform="translate(70 88) scale(1)" stroke="url(#snowGrad)" stroke-width="3" stroke-linecap="round">
+    <path d="M0 -8V8"/>
+    <path d="M-7 -4L7 4"/>
+    <path d="M7 -4L-7 4"/>
+  </g>
+
+  <g transform="translate(90 100) scale(1)" stroke="url(#snowGrad)" stroke-width="3" stroke-linecap="round">
+    <path d="M0 -8V8"/>
+    <path d="M-7 -4L7 4"/>
+    <path d="M7 -4L-7 4"/>
+  </g>
+
+  <g transform="translate(42 112) scale(1)" stroke="url(#snowGrad)" stroke-width="3" stroke-linecap="round">
+    <path d="M0 -8V8"/>
+    <path d="M-7 -4L7 4"/>
+    <path d="M7 -4L-7 4"/>
+  </g>
+
+  <g transform="translate(65 116) scale(1)" stroke="url(#snowGrad)" stroke-width="3" stroke-linecap="round">
+    <path d="M0 -8V8"/>
+    <path d="M-7 -4L7 4"/>
+    <path d="M7 -4L-7 4"/>
+  </g>
+
+  <g transform="translate(88 112) scale(1)" stroke="url(#snowGrad)" stroke-width="3" stroke-linecap="round">
+    <path d="M0 -8V8"/>
+    <path d="M-7 -4L7 4"/>
+    <path d="M7 -4L-7 4"/>
+  </g>
+</svg>

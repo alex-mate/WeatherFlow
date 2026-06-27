@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherFlow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=DM+Mono:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar-brand">Weather<span>Flow</span></div>
+      <div class="nav-controls">
+        <div class="search-bar-container" role="search">
+          <input
+            type="text"
+            placeholder="Search city…"
+            aria-label="Search for a city"
+            id="search-city-input"
+          />
+          <button
+            class="icon-button"
+            type="button"
+            aria-label="Search"
+            id="search-city-button"
+          >
+            <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path d="m21 21-4.35-4.35"></path>
+            </svg>
+          </button>
+        </div>
+        <button
+          class="use-location-button"
+          type="button"
+          id="use-location-button"
+          aria-label="Use my location"
+          title="Use my location"
+        >
+          <svg class="location-target-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M12 2v4M12 18v4M2 12h4M18 12h4"></path>
+            <circle cx="12" cy="12" r="8"></circle>
+          </svg>
+        </button>
+        <button
+          class="favorite-current-button"
+          type="button"
+          id="favorite-current-button"
+          aria-label="Add current city to favorites"
+          title="Add current city to favorites"
+          disabled
+        >
+          <svg class="favorite-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="m12 2.75 2.83 5.73 6.32.92-4.58 4.46 1.08 6.3L12 17.19l-5.65 2.97 1.08-6.3L2.85 9.4l6.32-.92L12 2.75Z"></path>
+          </svg>
+        </button>
+      </div>
+    </nav>
+    <section
+      class="saved-locations-panel hidden"
+      id="saved-locations-panel"
+      aria-label="Saved locations"
+    >
+      <div class="saved-location-group" id="favorites-group">
+        <p class="saved-location-heading">Favorites</p>
+        <div class="saved-location-list" id="favorites-list"></div>
+      </div>
+      <div class="saved-location-group" id="recent-searches-group">
+        <p class="saved-location-heading">Recent</p>
+        <div class="saved-location-list" id="recent-searches-list"></div>
+      </div>
+    </section>
+    <div id="loading-overlay" class="loading-overlay hidden" aria-live="polite">
+      <div class="loading-card">
+        <div class="loading-spinner" aria-hidden="true"></div>
+        <p id="loading-text">Loading weather…</p>
+      </div>
+    </div>
+    <div
+      id="error-banner"
+      class="error-banner hidden"
+      role="status"
+      aria-live="assertive"
+    ></div>
+    <main class="main-content-wrapper">
+      <section class="current-weather-card" id="data-display">
+        <div class="current-weather-topline">
+          <div class="current-weather-location">
+            <p class="section-eyebrow">Current Conditions</p>
+            <h1 id="location"></h1>
+            <p
+              id="current-weather-description"
+              class="current-weather-description"
+            ></p>
+          </div>
+          <div class="current-weather-visual">
+            <p id="current-temperature" class="current-temperature"></p>
+            <img
+              id="current-weather-icon"
+              class="weather-icon"
+              alt="Weather Icon"
+            />
+          </div>
+        </div>
+        <div class="weather-stats-grid">
+          <article class="weather-stat weather-stat-wind">
+            <div class="weather-stat-header">
+              <span class="weather-stat-label">Wind</span>
+              <span id="current-wind-direction" class="weather-stat-pill">--</span>
+            </div>
+            <div class="wind-indicator-row">
+              <div
+                class="wind-compass"
+                id="wind-compass"
+                role="img"
+                aria-label="Wind direction unavailable"
+              >
+                <span class="wind-cardinal wind-cardinal-n">N</span>
+                <span class="wind-cardinal wind-cardinal-e">E</span>
+                <span class="wind-cardinal wind-cardinal-s">S</span>
+                <span class="wind-cardinal wind-cardinal-w">W</span>
+                <span class="wind-compass-needle" id="wind-compass-needle"></span>
+                <span class="wind-compass-center"></span>
+              </div>
+              <div class="wind-reading">
+                <strong id="current-wind-speed" class="weather-stat-value">--</strong>
+                <span id="current-wind-bearing" class="weather-stat-meta">--</span>
+              </div>
+            </div>
+          </article>
+          <article class="weather-stat">
+            <span class="weather-stat-label">Humidity</span>
+            <strong id="current-humidity" class="weather-stat-value">--</strong>
+          </article>
+          <article class="weather-stat">
+            <span class="weather-stat-label">Feels Like</span>
+            <strong id="current-weather-feels-like" class="weather-stat-value">--</strong>
+          </article>
+          <article class="weather-stat">
+            <span class="weather-stat-label">Pressure</span>
+            <strong id="current-weather-pressure" class="weather-stat-value">--</strong>
+          </article>
+          <article class="weather-stat">
+            <span class="weather-stat-label">Low</span>
+            <strong id="current-weather-low" class="weather-stat-value">--</strong>
+          </article>
+          <article class="weather-stat">
+            <span class="weather-stat-label">High</span>
+            <strong id="current-weather-high" class="weather-stat-value">--</strong>
+          </article>
+          <article class="weather-stat">
+            <span class="weather-stat-label">Precipitation</span>
+            <strong id="current-weather-precipitation" class="weather-stat-value">--</strong>
+          </article>
+          <article class="weather-stat">
+            <span class="weather-stat-label">UV Index</span>
+            <strong id="current-weather-uv-index" class="weather-stat-value">--</strong>
+          </article>
+          <article class="weather-stat">
+            <span class="weather-stat-label">Sunrise</span>
+            <strong id="sunrise-time" class="weather-stat-value">--</strong>
+          </article>
+          <article class="weather-stat">
+            <span class="weather-stat-label">Sunset</span>
+            <strong id="sunset-time" class="weather-stat-value">--</strong>
+          </article>
+          <article class="weather-stat">
+            <span class="weather-stat-label">Updated</span>
+            <strong id="last-updated" class="weather-stat-value">--</strong>
+          </article>
+        </div>
+      </section>
+
+      <div class="forecast-grid">
+        <section class="hourly-forecast-container" id="hourly-display">
+          <h2 id="hourly-title" class="forecast-section-title">
+            Hourly Forecast
+          </h2>
+          <div id="hourly-cards" class="hourly-cards"></div>
+        </section>
+        <section class="weekly-forecast-container" id="week-forecast">
+          <h2 id="week-title" class="forecast-section-title">
+            Weekly Forecast
+          </h2>
+          <div id="week-cards" class="week-cards"></div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer" aria-label="Site footer">
+      <div class="footer-brand">
+        <span class="footer-mark" aria-hidden="true">MC</span>
+        <div>
+          <p class="footer-studio">Mate Code Studio</p>
+          <p class="footer-credit">Created by Alex Mate</p>
+        </div>
+      </div>
+      <p class="footer-product">WeatherFlow</p>
+    </footer>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>

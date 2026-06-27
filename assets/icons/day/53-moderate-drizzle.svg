@@ -1,0 +1,35 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Moderate Drizzle day icon">
+  <defs>
+    <linearGradient id="sunGrad" x1="36" y1="22" x2="78" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE066"/>
+      <stop offset="1" stop-color="#FFB703"/>
+    </linearGradient>
+    <linearGradient id="moonGrad" x1="38" y1="20" x2="72" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="cloudLight" x1="25" y1="43" x2="103" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="cloudDark" x1="25" y1="43" x2="103" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#94A3B8"/>
+      <stop offset="1" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="rainGrad" x1="0" y1="0" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="snowGrad" x1="0" y1="0" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" fill="none"/>
+
+  <path d="M35 85H94C104 85 112 77 112 67C112 58 105 51 96 51C93 36 80 26 64 26C48 26 35 37 32 51C22 52 15 60 15 70C15 79 25 85 35 85Z" fill="url(#cloudLight)" opacity="0.95"/>
+
+<path d="M44 91C39 99 39 106 44 109C49 106 49 99 44 91Z" fill="url(#rainGrad)"/>
+  <path d="M64 102C59 110 59 117 64 120C69 117 69 110 64 102Z" fill="url(#rainGrad)"/>
+  <path d="M84 91C79 99 79 106 84 109C89 106 89 99 84 91Z" fill="url(#rainGrad)"/>
+</svg>

@@ -1,0 +1,42 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Thunderstorm With Heavy Hail night icon">
+  <defs>
+    <linearGradient id="sunGrad" x1="36" y1="22" x2="78" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE066"/>
+      <stop offset="1" stop-color="#FFB703"/>
+    </linearGradient>
+    <linearGradient id="moonGrad" x1="38" y1="20" x2="72" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="cloudLight" x1="25" y1="43" x2="103" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="cloudDark" x1="25" y1="43" x2="103" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#94A3B8"/>
+      <stop offset="1" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="rainGrad" x1="0" y1="0" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="snowGrad" x1="0" y1="0" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" fill="none"/>
+
+  <path d="M35 83H94C104 83 112 75 112 65C112 56 105 49 96 49C93 34 80 24 64 24C48 24 35 35 32 49C22 50 15 58 15 68C15 77 25 83 35 83Z" fill="url(#cloudDark)" opacity="0.98"/>
+
+  <path d="M67 78L51 103H65L58 122L82 91H68L75 78H67Z" fill="#FACC15"/>
+<path d="M44 89C39 97 39 104 44 107C49 104 49 97 44 89Z" fill="url(#rainGrad)"/>
+  <path d="M64 100C59 108 59 115 64 118C69 115 69 108 64 100Z" fill="url(#rainGrad)"/>
+  <path d="M84 89C79 97 79 104 84 107C89 104 89 97 84 89Z" fill="url(#rainGrad)"/>
+  <circle cx="40" cy="102" r="4" fill="#BFDBFE"/>
+  <circle cx="91" cy="108" r="4" fill="#BFDBFE"/>
+
+  <circle cx="52" cy="116" r="4" fill="#BFDBFE"/>
+  <circle cx="78" cy="119" r="4" fill="#BFDBFE"/>
+
+</svg>

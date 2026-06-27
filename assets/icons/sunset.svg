@@ -1,0 +1,44 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Sunset weather icon</title>
+  <desc id="desc">A sunset icon with a half sun dropping below the horizon and warm evening rays.</desc>
+
+  <defs>
+    <linearGradient id="sunsetSun" x1="64" y1="40" x2="64" y2="88" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFB84A"/>
+      <stop offset="1" stop-color="#EF4444"/>
+    </linearGradient>
+    <linearGradient id="sunsetSky" x1="64" y1="18" x2="64" y2="86" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFB86B" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#7C3AED" stop-opacity="0.22"/>
+    </linearGradient>
+    <filter id="softGlow" x="16" y="16" width="96" height="86" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="1 0 0 0 1  0 1 0 0 0.32  0 0 1 0 0.12  0 0 0 0.35 0"/>
+      <feBlend in="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <rect width="128" height="128" fill="none"/>
+
+  <!-- soft sunset glow -->
+  <path d="M27 82C31.5 61.5 46.1 47 64 47C81.9 47 96.5 61.5 101 82H27Z" fill="url(#sunsetSky)" opacity="0.75"/>
+
+  <!-- sun -->
+  <path d="M34 82C34 65.4 47.4 52 64 52C80.6 52 94 65.4 94 82H34Z" fill="url(#sunsetSun)" filter="url(#softGlow)"/>
+
+  <!-- evening rays -->
+  <path d="M64 32V44" stroke="#FB923C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M39.5 42L48.3 50.8" stroke="#FB923C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M88.5 42L79.7 50.8" stroke="#FB923C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M25 65H38" stroke="#FB923C" stroke-width="7" stroke-linecap="round"/>
+  <path d="M103 65H90" stroke="#FB923C" stroke-width="7" stroke-linecap="round"/>
+
+  <!-- horizon -->
+  <path d="M20 82H108" stroke="#4B5563" stroke-width="7" stroke-linecap="round"/>
+  <path d="M32 96H96" stroke="#6B7280" stroke-width="6" stroke-linecap="round"/>
+  <path d="M44 109H84" stroke="#9CA3AF" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- downward cue for sunset -->
+  <path d="M64 23V34" stroke="#F97316" stroke-width="5" stroke-linecap="round"/>
+  <path d="M56 31L64 39L72 31" stroke="#F97316" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

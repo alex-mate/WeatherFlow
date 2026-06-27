@@ -1,0 +1,33 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Overcast night icon">
+  <defs>
+    <linearGradient id="sunGrad" x1="36" y1="22" x2="78" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE066"/>
+      <stop offset="1" stop-color="#FFB703"/>
+    </linearGradient>
+    <linearGradient id="moonGrad" x1="38" y1="20" x2="72" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="cloudLight" x1="25" y1="43" x2="103" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="cloudDark" x1="25" y1="43" x2="103" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#94A3B8"/>
+      <stop offset="1" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="rainGrad" x1="0" y1="0" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="snowGrad" x1="0" y1="0" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" fill="none"/>
+
+  <path d="M27 86H94C105 86 113 78 113 68C113 58 106 51 96 50C92 34 78 24 61 24C46 24 33 33 28 47C17 49 10 57 10 68C10 78 17 86 27 86Z" fill="#64748B" opacity="0.95"/>
+  <path d="M38 97H101C111 97 119 90 119 80C119 71 112 64 103 63C99 49 86 40 71 40C57 40 45 48 40 61C29 62 21 70 21 80C21 90 29 97 38 97Z" fill="url(#cloudDark)" opacity="0.96"/>
+
+</svg>

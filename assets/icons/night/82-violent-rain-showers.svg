@@ -1,0 +1,45 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Violent Rain Showers night icon">
+  <defs>
+    <linearGradient id="sunGrad" x1="36" y1="22" x2="78" y2="72" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFE066"/>
+      <stop offset="1" stop-color="#FFB703"/>
+    </linearGradient>
+    <linearGradient id="moonGrad" x1="38" y1="20" x2="72" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="cloudLight" x1="25" y1="43" x2="103" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#CBD5E1"/>
+    </linearGradient>
+    <linearGradient id="cloudDark" x1="25" y1="43" x2="103" y2="94" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#94A3B8"/>
+      <stop offset="1" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="rainGrad" x1="0" y1="0" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DD3FC"/>
+      <stop offset="1" stop-color="#0284C7"/>
+    </linearGradient>
+    <linearGradient id="snowGrad" x1="0" y1="0" x2="0" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E0F2FE"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" fill="none"/>
+
+  <path d="M78 24C63 28 51 42 51 59C51 77 64 91 82 94C75 99 66 102 56 102C35 102 18 85 18 64C18 43 35 26 56 26C64 26 71 28 78 24Z" fill="url(#moonGrad)"/>
+  <circle cx="91" cy="40" r="3" fill="#BAE6FD"/>
+  <circle cx="99" cy="58" r="2.5" fill="#E0F2FE"/>
+  <circle cx="82" cy="74" r="2" fill="#E0F2FE"/>
+
+
+  <path d="M35 93H94C104 93 112 85 112 75C112 66 105 59 96 59C93 44 80 34 64 34C48 34 35 45 32 59C22 60 15 68 15 78C15 87 25 93 35 93Z" fill="url(#cloudDark)" opacity="0.98"/>
+
+<path d="M28 88C23 96 23 103 28 106C33 103 33 96 28 88Z" fill="url(#rainGrad)"/>
+  <path d="M40 99C35 107 35 114 40 117C45 114 45 107 40 99Z" fill="url(#rainGrad)"/>
+  <path d="M52 88C47 96 47 103 52 106C57 103 57 96 52 88Z" fill="url(#rainGrad)"/>
+  <path d="M64 99C59 107 59 114 64 117C69 114 69 107 64 99Z" fill="url(#rainGrad)"/>
+  <path d="M76 88C71 96 71 103 76 106C81 103 81 96 76 88Z" fill="url(#rainGrad)"/>
+  <path d="M88 99C83 107 83 114 88 117C93 114 93 107 88 99Z" fill="url(#rainGrad)"/>
+  <path d="M100 88C95 96 95 103 100 106C105 103 105 96 100 88Z" fill="url(#rainGrad)"/>
+</svg>
